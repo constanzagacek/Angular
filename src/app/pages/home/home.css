@@ -1,0 +1,16 @@
+/*T´tilo llamado por id*/ 
+#title{
+    font-size: 35px;
+    text-align: center;
+    padding: 1rem;
+}
+
+.card {
+    margin-top: 5rem; /* 1rem = 15px*/
+}
+
+/*Botón llamado por la clase*/
+.btn-action {
+    background-color: darkgrey;
+    color: white;
+}
