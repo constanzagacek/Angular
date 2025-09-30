@@ -1,6 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 /*Cambiamos el color de fondo*/
-body{
+body {
     background-color: white;
+}
+
+* {
+    /*Definimos tipografía*/
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 40px;
+    font-style: normal;
 }

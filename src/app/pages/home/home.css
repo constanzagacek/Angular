@@ -1,4 +1,4 @@
-/*T´tilo llamado por id*/ 
+/*Título llamado por id*/ 
 #title{
     font-size: 35px;
     text-align: center;
@@ -11,6 +11,10 @@
 
 /*Botón llamado por la clase*/
 .btn-action {
-    background-color: darkgrey;
+    background-color: black;
     color: white;
+}
+
+.card-img-top {
+    height: 20rem;
 }
