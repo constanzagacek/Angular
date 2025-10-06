@@ -15,6 +15,10 @@
     color: white;
 }
 
+.btn-action:hover {
+    background-color: pink;
+}
+
 .card-img-top {
     height: 20rem;
 }
