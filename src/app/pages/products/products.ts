@@ -19,36 +19,44 @@ export class Products {
 
       {
         id: "1P",
-        img: "../../../assets/paisajemontañosos.jpg",
-        alt: "Foto de un paisaje turítico",
-        titulo: "Paisajes",
-        descrip: "Foto de un paisaje",
+        img: "../../../assets/rosas.jpg",
+        alt: "Foto sobre Rosas",
+        titulo: "Flores",
+        descrip: "Foto de unas rosas",
         fechaPub: 2025
       },
       {
         id: "2P",
-        img: "../../../assets/paisajemontañosos(2).jpg",
-        alt: "Foto de un paisaje turítico",
-        titulo: "Paisajes",
-        descrip: "Foto de un paisaje",
-        fechaPub: 2024
+        img: "../../../assets/cerezo.jpg",
+        alt: "Foto sobre unas flores de Cerezo",
+        titulo: "Flores",
+        descrip: "Foto de unas flores de cerezo",
+        fechaPub: 2025
       },
       {
         id: "3P",
-        img: "../../../assets/paisajemontañosos(3).jpg",
-        alt: "Foto de un paisaje turítico",
-        titulo: "Paisajes",
-        descrip: "Foto de un paisaje",
-        fechaPub: 2023
+        img: "../../../assets/orquídeaPhalaenopsis.jpg",
+        alt: "Foto sobre flores Orquídeas Phalaenopsis",
+        titulo: "Flores",
+        descrip: "Foto sobre flores Orquídeas Phalaenopsis",
+        fechaPub: 2025
       },
       {
         id: "3P",
-        img: "../../../assets/paisaje(4).jpg",
-        alt: "Foto de un paisaje turítico",
-        titulo: "Paisajes",
-        descrip: "Foto de un paisaje",
-        fechaPub: 2022
+        img: "../../../assets/jacinto.jpg",
+        alt: "Foto sobre unas flores de Jacinto",
+        titulo: "Flores",
+        descrip: "Foto sobre unas flores de Jacinto",
+        fechaPub: 2025
       }
     ]
   }
+
+  tarjetaSeleccionada: any = null;
+
+  verMas(tarjeta: any) {
+    this.tarjetaSeleccionada = tarjeta;
+
+  }
 }
+

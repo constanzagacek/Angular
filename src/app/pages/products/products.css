@@ -1,3 +1,10 @@
+.title{
+    font-size: 35px;
+    color: pink;
+    text-align: center;
+    padding: 1rem;
+}
+
 .container {
     display: flex;
     justify-content: center;
@@ -8,6 +15,10 @@ img {
     height: 11rem;
     /*Propiedad para ajutar el tamaño al conteno, manteniendo la calidad*/
     object-fit: cover;
+}
+
+.btn-action:hover {
+    background-color: pink;
 }
 
 /*Pantalla de computadora*/
@@ -31,4 +42,3 @@ img {
         color: lightgreen;
     }*/
 }
-
