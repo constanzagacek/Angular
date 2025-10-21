@@ -1,6 +1,6 @@
 .title{
     font-size: 35px;
-    color: pink;
+    color: black;
     text-align: center;
     padding: 1rem;
 }
@@ -18,7 +18,7 @@ img {
 }
 
 .btn-action:hover {
-    background-color: pink;
+    background-color: lightgreen;
 }
 
 /*Pantalla de computadora*/
