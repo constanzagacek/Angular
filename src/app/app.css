@@ -1,4 +1,14 @@
 /*Por clase*/
 .navbar {
-    background-color: lightgray;
+    background-color: black;
+}
+
+#text {
+    color: white;
+}
+
+.btn-outline-success {
+    color: white;
+    background-color: green;
+    border-color: black;
 }

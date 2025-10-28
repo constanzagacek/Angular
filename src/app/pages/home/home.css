@@ -1,13 +1,26 @@
-/*Título llamado por id*/ 
-#title{
+/*Título llamado por id*/
+#title {
     font-size: 35px;
-    color: pink;
+    color: black;
     text-align: center;
     padding-top: 1rem;
 }
 
+#carousel {
+    height: 400px !important;
+    /* Forzá el alto */
+    overflow: hidden;
+}
+
+.carousel-inner img {
+    height: 400px;
+    object-fit: cover;
+    /* Ajusta la imagen sin deformarla */
+}
+
 .card {
-    margin-top: 1rem; /* 1rem = 15px*/
+    margin-top: 1rem;
+    /* 1rem = 15px*/
 }
 
 /*Botón llamado por la clase*/
@@ -17,7 +30,7 @@
 }
 
 .btn-action:hover {
-    background-color: pink;
+    background-color: rgb(89, 146, 89);
 }
 
 .card-img-top {

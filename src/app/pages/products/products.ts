@@ -15,7 +15,6 @@ export class Products {
 
   constructor() {
     this.infoTarjeta = [
-      // 
 
       {
         id: "1P",

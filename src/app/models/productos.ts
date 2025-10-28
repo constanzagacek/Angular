@@ -3,10 +3,12 @@
 
 /*Interfaz de tarjeta: Es una estructura esperada con su tipo de dato.*/
 
-export interface Gallery {
-    id: string; // Números con letras (ej.: 123AB / 123 / ABC)
+export interface Productos {
+    id: number; // Para que sea autoincrementable
+    nombre: string;
+    precio: number;
     img: string;
+    descrip: 
     alt: string;
     titulo: string;
 }
-

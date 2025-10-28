@@ -13,7 +13,7 @@
 
 img {
     height: 11rem;
-    /*Propiedad para ajutar el tamaño al conteno, manteniendo la calidad*/
+    /*Propiedad para ajutar el tamaño al contenedor, manteniendo la calidad*/
     object-fit: cover;
 }
 
