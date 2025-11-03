@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Card } from '../../models/card';
+import { Card } from "../../models/card";
 
 @Component({
   selector: 'app-products',
@@ -17,7 +17,7 @@ export class Products {
     this.infoTarjeta = [
 
       {
-        id: "1P",
+        id: 1,
         img: "../../../assets/rosas.jpg",
         alt: "Foto sobre Rosas",
         titulo: "Flores",
@@ -25,7 +25,7 @@ export class Products {
         fechaPub: 2025
       },
       {
-        id: "2P",
+        id: 2,
         img: "../../../assets/cerezo.jpg",
         alt: "Foto sobre unas flores de Cerezo",
         titulo: "Flores",
@@ -33,7 +33,7 @@ export class Products {
         fechaPub: 2025
       },
       {
-        id: "3P",
+        id: 3,
         img: "../../../assets/orquídeaPhalaenopsis.jpg",
         alt: "Foto sobre flores Orquídeas Phalaenopsis",
         titulo: "Flores",
@@ -41,7 +41,7 @@ export class Products {
         fechaPub: 2025
       },
       {
-        id: "3P",
+        id: 4,
         img: "../../../assets/jacinto.jpg",
         alt: "Foto sobre unas flores de Jacinto",
         titulo: "Flores",

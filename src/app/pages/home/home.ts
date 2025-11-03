@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Carrousel } from '../../models/productos';
+import { Carrousel } from '../../models/card';
 import { CommonModule } from '@angular/common';
 
 

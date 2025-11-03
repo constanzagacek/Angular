@@ -8,7 +8,7 @@ export interface Productos {
     nombre: string;
     precio: number;
     img: string;
-    descrip: 
+    descrip: string;
     alt: string;
     titulo: string;
 }

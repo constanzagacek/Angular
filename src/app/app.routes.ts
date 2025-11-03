@@ -6,7 +6,7 @@ import { Contact } from './pages/contact/contact';
 
 export const routes: Routes = [
     /*Definimos la ruta general o la raíz en especifico que nos lleve a la ruta HOME -> principal*/
-    {path: " ", component: Home},
+    {path: "", component: Home},
     {path: "home", component: Home},
     {path: "about", component: About},
     {path: "products", component: Products},

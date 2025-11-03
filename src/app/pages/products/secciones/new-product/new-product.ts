@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Products } from "../../../../models/products";
+import { Productos } from '../../../../models/productos'
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from "@angular/forms";
 
 /*
@@ -15,6 +15,7 @@ Validators: Valida los datos ingresados en un formulario.
   templateUrl: './new-product.html',
   styleUrl: './new-product.css'
 })
+
 export class NewProduct {
 
 }
