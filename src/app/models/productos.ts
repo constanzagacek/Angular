@@ -6,9 +6,16 @@
 export interface Productos {
     id: number; // Para que sea autoincrementable
     nombre: string;
-    precio: number;
-    img: string;
     descrip: string;
-    alt: string;
-    titulo: string;
+    precio: number;
+    img?: string; // ? : Indica que no es una propiedad estrictamente requerida
+    alt?: string;
 }
+
+// EJEMPLO
+/* export interface Indumentaria {
+    id: number; <- 2025
+    nombre: string; <- "Remera"
+    fechaPublicacion: Date; <- fechas: new Date ("12/01/25")
+    activo: boolean; <- True or False
+} */

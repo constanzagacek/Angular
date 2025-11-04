@@ -2,21 +2,27 @@
     <h2>Nuevo Prducto</h2>
 
     <!--Inserto etiqueta "formGroup" para crear un formulario y lo iguala a su nombre-->
-    <!--<form [formGroup]="formGroup">
+    <!--[formGroup] es una directiva de formularios reactivos. Básicamente los agrupa y los guarda -->
+    <form [formGroup]="nuevoProducto" (ngSubmit)="crearProducto()"> <!--((ngSubmit)="" : Envia la información-->
         <div class="mb-3">
             <label for="nombre" class="form-label">Nombre</label>
-            <input id="nombre" type="text" class="form-label">
+            <!--formControlName es un atributo que víncula la información de mi propiedad-->
+            <input id="nombre" type="text" class="form-label" formControlName="nombre">
+        </div>
+
+        <div class="mb-3">
+            <label for="descrip" class="form-label">Descripción</label>
+            <input id="descrip" type="text" class="form-label" formControlName="descrip">
         </div>
 
         <div class=" mb-3">
-             <label for="precio" class="form-label">Precio</label>
-            <input id="precio" type="number" class="form-control">
+            <label for="precio" class="form-label">Precio</label>
+            <input id="precio" type="number" class="form-control" formControlName="precio">
         </div>
 
-        <div class="mb-3"></div>
-
-        <div class="mb-3"></div>
-
-        <div class="mb-3"></div>
-    </form>--> 
+        <!--El botón se deshabilita cuando el "nuevoPorducto" no es válido
+        Ej.: Faltan campos por rellenar o no cumplen con el valor esperado -->
+        <button type="submit" class="btn btn-secondary w-100" [disabled]="!nuevoProducto.valid">Guardar</button>
+        <!--Disabled es para deshabilitarlo según alguna condición-->
+    </form>
 </div>
