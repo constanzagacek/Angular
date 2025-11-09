@@ -19,8 +19,10 @@
 }
 
 .card {
+    height: 500px;
     margin-top: 1rem;
     /* 1rem = 15px*/
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 /*Botón llamado por la clase*/
@@ -30,7 +32,7 @@
 }
 
 .btn-action:hover {
-    background-color: rgb(89, 146, 89);
+    background-color: darkgreen;
 }
 
 .card-img-top {

@@ -1,0 +1,16 @@
+#novedades h2 {
+  color: black;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+#novedades h3 {
+  color: black;
+  font-size: 2rem;
+}
+
+#novedades img {
+  border-radius: 15px;
+  height: 400px;
+  object-fit: cover;
+}

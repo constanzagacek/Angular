@@ -1,14 +1,19 @@
 /*Por clase*/
 .navbar {
-    background-color: black;
+  /*position: fixed; /* Lo deja fijo */
+  /*top: 0; /*Lo pega arriba */
+  /*width: 100%; /*Ocupa todo el ancho */
+  background-color: black; /*Color de fondo para que se vea */
 }
 
 #text {
+    font-size: 16px;
     color: white;
 }
 
 .btn-outline-success {
     color: white;
-    background-color: green;
+    background-color: black;
     border-color: black;
 }
+

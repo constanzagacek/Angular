@@ -1,4 +1,4 @@
-<h1 class="title"><strong>Sección de productos</strong></h1>
+<h1 class="title text-center"><strong>PRODUCTOS</strong></h1>
 
 <!--
     lg -> LARGE
@@ -11,15 +11,69 @@
     sm: Tamaño de pantalla pequeño -> CELULAR.
 -->
 
-<div class="container">
-  <div class="row">
+<!-- CONTENEDOR DE PRODUCTOS -->
+<div class="container mt-4">
+  <div class="row justify-content-center">
     <!--ngFor: Es una directiva que permite iterar colecciones/arreglos. Es casi paarecido al "for" y "forEach"-->
     <!--let i -> Definición de la variable que representa un elemento de la colección "infoTarjeta" (permite iterar)-->
+    <div *ngFor="let i of infoTarjeta" class="col-lg-3 col-md-4 col-sm-6 mb-4 d-flex justify-content-center">
+      <div class="card shadow-sm border-0 rounded-4 text-center">
+        <img src="{{ i.img }}" class="card-img-top" alt="{{ i.alt }}">
+        <div class="card-body">
+          <!--Interpolación: Nos permite acceder a una propiedad específica del modelo-->
+          <h5 class="card-title text fw-bold">{{ i.titulo }}</h5>
+          <p class="card-text">
+            {{ i.descrip }} <br>
+            <small class="text">Publicado en {{ i.fechaPub }}</small>
+          </p>
+          <button type="button" class="btn btn-success btn-sm px-4" data-bs-toggle="modal" data-bs-target="#verMasInfo"
+            (click)="verMas(i)">
+            Ver más
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL DE DETALLE -->
+<div class="modal fade" id="verMasInfo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content rounded-4">
+      <div class="modal-header bg text-white">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">
+          {{ tarjetaSeleccionada?.titulo }}
+        </h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img src="{{ tarjetaSeleccionada?.img }}" alt="{{ tarjetaSeleccionada?.alt }}" class="img-fluid rounded-3 mb-3">
+        <p class="text">
+          {{ tarjetaSeleccionada?.descrip }}
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-bs-dismiss="modal">
+          Cerrar
+        </button>
+        <button type="button" class="btn btn-success"><i class="bi bi-cart"></i></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--
+<h1 class="title"><strong>PRODUCTOS</strong></h1>
+
+<div class="container">
+  <div class="row">
+    
     <div *ngFor="let i of infoTarjeta" class="col-lg-3 col-md-3 col-sm-12 col-xs-12 mb-4 ">
       <div class="card" style="width: 18rem;">
         <img src="{{i.img}}" class="card-img-top" alt="{{i.alt}}">
         <div class="card-body">
-          <!--Interpolación: Nos permite acceder a una propiedad específica del modelo-->
+          
           <h5 class="card-title">{{i.titulo}}</h5>
           <p class="card-text">{{i.descrip}} - {{i.fechaPub}}</p>
           <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#verMasInfo" (click)="verMas(i)"> 
@@ -51,3 +105,4 @@
     </div>
   </div>
 </div>
+-->

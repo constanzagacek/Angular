@@ -1,15 +1,17 @@
 <nav class="navbar navbar-expand-lg">
   <div class="container-fluid">
-    <a class="navbar-brand" href="/public/planta-svgrepo-com.svg"></a>
+    <a class="navbar-brand" href="#" id="image/png">
+      <img src="../assets/flower2.png" alt="">
+    </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon" ></span>
+      <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <!--HOME-->
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="home" id="text">Home</a>
+          <a class="nav-link active" aria-current="page" href="home" id="text">Inicio</a>
         </li>
         <!--ABOUT-->
         <li class="nav-item">
@@ -19,20 +21,32 @@
         <li class="nav-item">
           <a class="nav-link" href="products" id="text">Productos</a>
         </li>
+        <!--OFFERS-->
+        <li class="nav-item">
+          <a class="nav-link" href="offers" id="text">Ofertas</a>
+        </li>
+        <!--GALLERY-->
+        <li class="nav-item">
+          <a class="nav-link" href="gallery" id="text">Galería</a>
+        </li>
+        <!--OPINIONS-->
+        <li class="nav-item">
+          <a class="nav-link" href="opinions" id="text">Opiniones</a>
+        </li>
         <!--CONTACT-->
         <li class="nav-item">
-          <a class="nav-link" href="contact" id="text">Contáctanos</a>
+          <a class="nav-link" href="contact" id="text">Contacto</a>
         </li>
       </ul>
       <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
         <button class="btn btn-outline-success" type="submit"><i class="bi bi-search"></i></button>
       </form>
     </div>
   </div>
 </nav>
 
-<!--Etiqueta que muestra el contenido de mi aplicación-->
+<!--Etiqueta que muestra el contenido de mi web-->
 <router-outlet></router-outlet>
 
 <!--Dos formas de llamar a un componente desde otra ubicación-->
@@ -40,41 +54,41 @@
 <!-- <app-home></app-home> -->
 
 
-  <!-- FOOTER -->
-  <footer class="bg-black text-light pt-4 pb-2 mt-5">
-    <div class="container">
-      <div class="row">
-        <!-- Columna 1 -->
-        <div class="col-md-4 mb-3">
-          <h5 class="text-uppercase fw-bold">Floristería LOVE ❤️</h5>
-          <p>Tu espacio para aprender y comprar. Hecho con mucho amor y Bootstrap.</p>
-        </div>
-
-        <!-- Columna 2 -->
-        <div class="col-md-4 mb-3">
-          <h5 class="text-uppercase fw-bold">Enlaces útiles</h5>
-          <ul class="list-unstyled">
-            <li><a href="#" class="text-light text-decoration-none">Inicio</a></li>
-            <li><a href="#" class="text-light text-decoration-none">Sobre nosotros</a></li>
-            <li><a href="#" class="text-light text-decoration-none">Servicios</a></li>
-            <li><a href="#" class="text-light text-decoration-none">Contacto</a></li>
-          </ul>
-        </div>
-
-        <!-- Columna 3 -->
-        <div class="col-md-4 mb-3">
-          <h5 class="text-uppercase fw-bold">Síguenos</h5>
-          <a href="#" class="text-light me-3" src=""><i class="bi bi-facebook fs-4"></i></a>
-          <a href="#" class="text-light me-3"><i class="bi bi-instagram fs-4"></i></a>
-          <a href="#" class="text-light me-3"><i class="bi bi-twitter-x fs-4"></i></a>
-          <a href="#" class="text-light"><i class="bi bi-envelope fs-4"></i></a>
-        </div>
+<!-- FOOTER -->
+<footer class="bg-black text-light pt-4 pb-2 mt-5">
+  <div class="container">
+    <div class="row">
+      <!-- Columna 1 -->
+      <div class="col-md-4 mb-3">
+        <h5 class="text-uppercase fw-bold">Floristería LOVE 🌿</h5>
+        <p>Tu espacio para aprender y comprar. Hecho con mucho amor y Bootstrap.</p>
       </div>
 
-      <hr class="border-light">
+      <!-- Columna 2 -->
+      <div class="col-md-4 mb-3">
+        <h5 class="text-uppercase fw-bold">Enlaces útiles</h5>
+        <ul class="list-unstyled">
+          <li><a href="home" class="text-light text-decoration-none">Inicio</a></li>
+          <li><a href="products" class="text-light text-decoration-none">Productos</a></li>
+          <li><a href="opinions" class="text-light text-decoration-none">Opiniones</a></li>
+          <li><a href="contact" class="text-light text-decoration-none">Contacto</a></li>
+        </ul>
+      </div>
 
-      <div class="text-center">
-        <p class="mb-0">&copy; 2025 Floristería LOVE. Todos los derechos reservados.</p>
+      <!-- Columna 3 -->
+      <div class="col-md-4 mb-3">
+        <h5 class="text-uppercase fw-bold">Síguenos</h5>
+        <a href="https://www.facebook.com/" class="text-light me-3" src=""><i class="bi bi-facebook fs-4"></i></a>
+        <a href="https://www.instagram.com/" class="text-light me-3"><i class="bi bi-instagram fs-4"></i></a>
+        <a href="https://x.com/X." class="text-light me-3"><i class="bi bi-twitter-x fs-4"></i></a>
+        <a href="https://mail.google.com/" class="text-light"><i class="bi bi-envelope fs-4"></i></a>
       </div>
     </div>
-  </footer>
+
+    <hr class="border-light">
+
+    <div class="text-center">
+      <p class="mb-0">&copy; 2025 Floristería LOVE. Todos los derechos reservados.</p>
+    </div>
+  </div>
+</footer>

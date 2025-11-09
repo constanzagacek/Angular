@@ -1,0 +1,139 @@
+#galeria {
+  background-color: white;
+  padding: 50px 20px;  /* Espacio interior (superior, inferior, laterales) */
+  text-align: center;
+}
+
+/* Título principal */
+#galeria h2 {
+  color: black;
+  font-size: 3rem;
+  margin-bottom: 40px; /* Espacio debajo del título */
+}
+
+/* ----- Diseño de la cuadrícula de productos ----- */
+.galeria-grid {
+  display: grid; /* Usa cuadrícula en lugar de flex */
+  gap: 25px; /* Espacio entre las tarjetas */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));  /* Crea columnas flexibles: mínimo 250px cada una, máximo ajustable */
+  max-width: 1100px; /* Ancho máximo del contenedor */
+  margin: 0 auto; /* Centra el contenido horizontalmente */
+}
+
+/* ----- Cada tarjeta de producto ----- */
+.card {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 15px;
+}
+
+/* Imagen del producto */
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /* Mantiene proporción sin deformar */
+  border-radius: 10px;
+}
+
+/* Título del producto */
+.card h3 {
+  color: black;
+  margin-top: 15px;
+}
+
+/* Descripción breve */
+.descripcion {
+  color: black;
+  font-size: 0.95em;
+  margin-bottom: 10px;
+}
+
+/* ----- Estilo del botón Ver más (etiqueta <summary>) ----- */
+details summary {
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  padding: 8px 15px;
+  display: inline-block; /* Se comporta como botón */
+  font-size: 0.9em;
+}
+
+details summary:hover {
+  background-color: darkgreen
+}
+
+/* Texto dentro del detalle (oculto hasta abrir) */
+details p {
+  margin-top: 10px;
+  color: black;
+  font-size: 0.9em;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* Elimina el triángulo por defecto del <summary> */
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+/* ================== SECCIÓN DE FORMULARIO ================== */
+
+/* Estilo general de la sección */
+#cantidad {
+  background-color: rgb(213, 255, 213);
+  padding: 40px 20px; /* Espaciado interno */
+  text-align: center; /* Centra los textos */
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Título del formulario */
+#cantidad h2 {
+  color: darkgreen;                  
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+/* Estilo del formulario */
+#cantidad form {
+  display: inline-block; /* Centra el formulario */
+  background-color: white; /* Fondo blanco */
+  padding: 20px 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Etiqueta descriptiva */
+#cantidad label {
+  display: block; /* Pone la etiqueta arriba del input */
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: black;
+}
+
+/* Campo numérico */
+#cantidad input[type="number"] {
+  width: 100px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 1em;
+  margin-right: 10px;
+}
+
+/* Botón de envío */
+#cantidad input[type="submit"] {
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 20px;
+  font-size: 1em;
+}
+
+/* Efecto hover del botón */
+#cantidad input[type="submit"]:hover {
+  background-color: darkgreen;
+}
