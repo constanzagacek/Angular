@@ -1,0 +1,86 @@
+/* Contenedor general de la sección */
+#contacto {
+  background-color: white; /* Color de fondo claro */
+  padding: 2rem; /* Espacio interno */
+  text-align: center; /* Centra el texto */
+}
+
+/* Título principal */
+.titulo-contacto {
+  font-size: 2rem; /* Tamaño grande */
+  color: darkgreen;            
+  margin-bottom: 1rem; /* Espacio debajo del título */
+}
+
+/* Texto introductorio */
+.texto-contacto {
+  max-width: 600px; /* Limita el ancho para que sea más fácil de leer */
+  margin: 0 auto 2rem auto; /* Centra horizontalmente */
+  color: black;
+  font-size: 1rem; /* Tamaño estándar */
+}
+
+/* Formulario de contacto */
+.form-contacto {
+  background-color: white; /* Fondo blanco para resaltar */
+  padding: 1.5rem;  /* Espacio interno */
+  border-radius: 10px; /* Bordes redondeados */
+  max-width: 500px; /* Ancho máximo del formulario */
+  margin: 0 auto 2rem auto;  /* Centrado y espacio debajo */
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15); /* Sombra suave */
+  text-align: left;  /* Alinea el texto a la izquierda */
+}
+
+/* Etiquetas del formulario */
+.form-contacto label {
+  display: block; /* Cada label ocupa su propia línea */
+  font-weight: bold; /* Texto más fuerte */
+  margin-top: 0.8rem; /* Espacio superior entre campos */
+  color: black; /* Color oscuro */
+}
+
+/* Campos de texto, correo y área de mensaje */
+.form-contacto input,
+.form-contacto textarea {
+  width: 100%; /* Ocupan todo el ancho del formulario */
+  padding: 0.6rem; /* Espacio interno */
+  margin-top: 0.3rem; /* Espacio entre el label y el campo */
+  border: 1px solid #ccc; /* Borde gris claro */
+  border-radius: 5px; /* Bordes redondeados */
+  font-size: 1rem; /* Tamaño cómodo de texto */
+  box-sizing: border-box; /* Incluye padding dentro del ancho total */
+}
+
+/* Botón de enviar */
+.form-contacto button {
+  background-color: black; 
+  color: white;              
+  border: none;              
+  padding: 0.6rem 1.2rem;    
+  border-radius: 5px;        
+  margin-top: 1rem; /* Espacio encima */
+  font-size: 1rem; /* Tamaño legible */
+}
+
+/* Color del botón al pasar el mouse */
+.form-contacto button:hover {
+  background-color: darkgreen; /* Verde más oscuro */
+}
+
+/* Información adicional debajo del formulario */
+.info-extra {
+  color: darkgreen;
+  font-size: 0.95rem;
+  line-height: 1.5; /* Espaciado entre líneas */
+}
+
+/* RESPONSIVO: Para pantallas chicas */
+@media (max-width: 600px) {
+  #contacto {
+    padding: 1rem; /* Menos espacio en celulares */
+  }
+
+  .form-contacto {
+    width: 100%; /* Ocupa todo el ancho disponible */
+  }
+}

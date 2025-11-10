@@ -1,1 +1,61 @@
-<p>opinions works!</p>
+<section id="opiniones">
+    <!-- Título de la sección -->
+    <h2 class="titulo-opiniones"><strong>OPINIONES DE NUESTROS CLIENTES</strong></h2>
+
+    <!-- Contenedor principal -->
+    <div class="contenedor-opiniones">
+
+        <!-- Opinión 1 -->
+        <div class="opinion">
+            <h3>Laura V.</h3>
+            <p class="estrellas">★★★★★</p>
+            <p class="texto">
+                “Me encantó el ramo, las flores llegaron frescas y muy bien presentadas.”
+            </p>
+        </div>
+
+        <!-- Opinión 2 -->
+        <div class="opinion">
+            <h3>Fernando G.</h3>
+            <p class="estrellas">★★★★☆</p>
+            <p class="texto">
+                “Muy lindas plantas, el envío tardó un poquito pero valió la pena.”
+            </p>
+        </div>
+
+        <!-- Opinión 3 -->
+        <div class="opinion">
+            <h3>Ramiro G.</h3>
+            <p class="estrellas">★★★★★</p>
+            <p class="texto">
+                “Excelente atención y variedad de productos. Recomendado.”
+            </p>
+        </div>
+    </div>
+
+    <!-- Formulario decorativo (no funcional) -->
+    <form class="form-opinion">
+        <h3><strong>DEJÁ TU OPINIÓN</strong></h3>
+
+        <!-- Nombre -->
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" placeholder="Tu nombre">
+
+        <!-- Valoración -->
+        <label for="valoracion">Valoración:</label>
+        <select id="valoracion">
+            <option>★★★★★ - Excelente</option>
+            <option>★★★★☆ - Muy bueno</option>
+            <option>★★★☆☆ - Bueno</option>
+            <option>★★☆☆☆ - Regular</option>
+            <option>★☆☆☆☆ - Malo</option>
+        </select>
+
+        <!-- Comentario -->
+        <label for="comentario">Comentario:</label>
+        <textarea id="comentario" rows="3" placeholder="Escribe tu opinión..."></textarea>
+
+        <!-- Botón (no envía datos) -->
+        <button type="submit">Enviar</button>
+    </form>
+</section>

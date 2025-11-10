@@ -2,9 +2,9 @@
   font-size: 3rem;
   color: black;
   text-align: center;
-  font-weight: 700px;
-  margin-bottom: 1rem;
-  padding: 3rem;
+  font-weight: 700; 
+  margin-bottom: 1.5rem;
+  padding: 2rem; 
 }
 
 .container {
