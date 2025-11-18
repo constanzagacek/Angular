@@ -1,3 +1,15 @@
+#carouselFlores {
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+#carouselPlantas {
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+#carouselArboles {
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
 #novedades h2 {
   color: black;
   font-size: 3rem;

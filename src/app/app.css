@@ -3,17 +3,35 @@
   /*position: fixed; /* Lo deja fijo */
   /*top: 0; /*Lo pega arriba */
   /*width: 100%; /*Ocupa todo el ancho */
-  background-color: black; /*Color de fondo para que se vea */
+  background-color: black;
+  /*Color de fondo para que se vea */
 }
 
 #text {
-    font-size: 16px;
-    color: white;
+  font-size: 16px;
+  color: white;
 }
 
 .btn-outline-success {
-    color: white;
-    background-color: black;
-    border-color: black;
+  color: white;
+  background-color: black;
+  border-color: black;
 }
 
+/* Carrito */
+.cart {
+  position: relative; /* Para colocar el numerito */
+  font-size: 21px; /* tamaño del ícono */
+  color: white;
+}
+
+/* Numerito del carrito */
+.cart-count {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  color: white;
+  font-size: 12px;
+  padding: 2px 5px;
+  border-radius: 50%; /* círculo */
+}

@@ -27,7 +27,7 @@
   border-radius: 10px; /* Bordes redondeados */
   max-width: 500px; /* Ancho máximo del formulario */
   margin: 0 auto 2rem auto;  /* Centrado y espacio debajo */
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15); /* Sombra suave */
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
   text-align: left;  /* Alinea el texto a la izquierda */
 }
 

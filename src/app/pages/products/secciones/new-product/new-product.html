@@ -1,22 +1,22 @@
 <div class="container">
-    <h2>Nuevo Prducto</h2>
+    <h2><strong>AGREGA UN NUEVO PRODUCTO</strong></h2>
 
     <!--Inserto etiqueta "formGroup" para crear un formulario y lo iguala a su nombre-->
     <!--[formGroup] es una directiva de formularios reactivos. Básicamente los agrupa y los guarda -->
     <form [formGroup]="nuevoProducto" (ngSubmit)="crearProducto()"> <!--((ngSubmit)="" : Envia la información-->
         <div class="mb-3">
-            <label for="nombre" class="form-label">Nombre</label>
+            <label for="nombre" class="form-label">Nombre: </label>
             <!--formControlName es un atributo que víncula la información de mi propiedad-->
             <input id="nombre" type="text" class="form-label" formControlName="nombre">
         </div>
 
         <div class="mb-3">
-            <label for="descrip" class="form-label">Descripción</label>
+            <label for="descrip" class="form-label">Descripción: </label>
             <input id="descrip" type="text" class="form-label" formControlName="descrip">
         </div>
 
         <div class=" mb-3">
-            <label for="precio" class="form-label">Precio</label>
+            <label for="precio" class="form-label">Precio: </label>
             <input id="precio" type="number" class="form-control" formControlName="precio">
         </div>
 
@@ -25,4 +25,11 @@
         <button type="submit" class="btn btn-secondary w-100" [disabled]="!nuevoProducto.valid">Guardar</button>
         <!--Disabled es para deshabilitarlo según alguna condición-->
     </form>
+</div>
+
+
+<div class="container">
+    <ul class="list-group" *ngFor="let producto of coleccionProductos">
+        <li class="list-group-item"> {{ producto.nombre}} </li>
+    </ul>
 </div>

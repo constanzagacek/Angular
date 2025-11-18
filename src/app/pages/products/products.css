@@ -14,7 +14,7 @@
 .card {
   width: 18rem;
   border-radius: 1rem;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 .card-img-top {
@@ -82,9 +82,9 @@ img {
 
 .btn-action:hover {
     background-color: lightgreen;
-}
+} */
 
-/*Pantalla de computadora
+/* Pantalla de computadora */
 @media(min-width: 751px) {
     .card {
         width: 16rem;
@@ -92,10 +92,10 @@ img {
 
     /*.title {
         color: lightblue;
-    }
+    } */
 }
 
-/*Pantalla de celular
+/*Pantalla de celular */
 @media(max-width: 750px) {
     .card {
         width: 9rem;
@@ -103,5 +103,5 @@ img {
 
     /*title {
         color: lightgreen;
-    }
-}*/
+    } */
+}

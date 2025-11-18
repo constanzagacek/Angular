@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Productos } from '../../../../models/productos'
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from "@angular/forms";
+import { CommonModule } from '@angular/common';
 import { ThisReceiver } from '@angular/compiler';
 
 /*
@@ -12,7 +13,7 @@ Validators: Valida los datos ingresados en un formulario.
 
 @Component({
   selector: 'app-new-product',
-  imports: [ReactiveFormsModule],
+  imports: [CommonModule, ReactiveFormsModule],
   templateUrl: './new-product.html',
   styleUrl: './new-product.css'
 })
@@ -59,6 +60,8 @@ export class NewProduct {
       // Agregamos nuevo producto a la colección de productos
       this.coleccionProductos.push(nuevoProducto);
 
+      alert("¡Se creo el nuevo producto con éxito! \n Nombre del producto nuevo: " + nuevoProducto.nombre);
+
       console.log("Productos agregados: ", nuevoProducto);
       console.log("Clección actual de productos", this.coleccionProductos);
 
@@ -66,7 +69,4 @@ export class NewProduct {
       this.nuevoProducto.reset()
     }
   }
-
-
-
 }

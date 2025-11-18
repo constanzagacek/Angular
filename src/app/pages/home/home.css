@@ -19,7 +19,7 @@
 }
 
 .card {
-    height: 500px;
+    height: 520px;
     margin-top: 1rem;
     /* 1rem = 15px*/
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -33,6 +33,11 @@
 
 .btn-action:hover {
     background-color: darkgreen;
+}
+
+#advertencia {
+    margin-top: 15px;
+    color: darkred;
 }
 
 .card-img-top {
